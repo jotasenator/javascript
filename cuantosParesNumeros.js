@@ -32,4 +32,18 @@ if (lista != 0) {
     console.log('No hay parejas de numeros Ismael!')
 }
 
+//refactoring after reading Profesional Notes...
 
+arr = [12, 21, 12, 3, 12, 32, , 23, 23]
+
+set = new Set(arr)
+
+lista = []
+for (let i of set) {
+    var filtro = arr.filter((x) => x === i)
+    if (filtro.length / 2 >= 1) {
+        lista.push([`numero ${i}`, `cantidad de parejas: ${Math.floor(filtro.length / 2)}`])
+
+    }
+}
+console.log(lista)
