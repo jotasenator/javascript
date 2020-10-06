@@ -1,8 +1,6 @@
 
 esPrimo = (n) => {
 
-    contador = 0
-
     for (let i = 2; i <= 9; i++) {
         if (n != i) {
             if (n % i == 0) {
