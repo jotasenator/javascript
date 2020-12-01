@@ -1,0 +1,9 @@
+function alphanumeric(string){
+  //your code here
+  const patron=/[A-Za-z0-9]/
+  if(patron.test(string)===true && !string.includes(' ') && !string.includes('_') &&  !string.includes('!')){
+    return true
+    }else{
+      return false
+    }
+  }
